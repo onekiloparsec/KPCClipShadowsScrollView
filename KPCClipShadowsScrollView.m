@@ -101,8 +101,9 @@
 		return;
 	}
 
+	NSColor *rgbUpColor = [upColor colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
 	CGFloat red, green, blue, alpha;
-	[upColor getRed:&red green:&green blue:&blue alpha:&alpha];
+	[rgbUpColor getRed:&red green:&green blue:&blue alpha:&alpha];
 	NSColor *lowColor = [NSColor colorWithCalibratedRed:red green:green blue:blue alpha:0.0];
 	[self setTopGradientUpperColor:upColor lowerColor:lowColor];
 }
@@ -129,8 +130,9 @@
 		return;
 	}
 
+	NSColor *rgbLowColor = [lowColor colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
 	CGFloat red, green, blue, alpha;
-	[lowColor getRed:&red green:&green blue:&blue alpha:&alpha];
+	[rgbLowColor getRed:&red green:&green blue:&blue alpha:&alpha];
 	NSColor *upColor = [NSColor colorWithCalibratedRed:red green:green blue:blue alpha:0.0];
 	[self setBottomGradientLowerColor:lowColor upperColor:upColor];
 }
