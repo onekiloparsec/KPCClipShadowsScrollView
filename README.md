@@ -5,4 +5,5 @@ KPCClipShadowsScrollView is a simple simple Cocoa NSScrollView subclass that all
 
 Below is a picture of the demo (with not-so-subtle shadows...)
 
-!(/Demo/Demo.png?raw=true)
+![ScreenShot](/Demo/Demo.png?raw=true)
+
